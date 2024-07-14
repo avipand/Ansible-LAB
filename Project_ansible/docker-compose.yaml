@@ -1,0 +1,25 @@
+services:
+  ansible_master:
+    build: ansible-master/
+    container_name: ansible_master
+    networks:
+      - ansible-network
+    stdin_open: true
+    tty: true  
+  ansible-webserver:
+    build: ansible-node/
+    container_name: ansible-webserver
+    networks:
+      - ansible-network
+    stdin_open: true
+    tty: true  
+  ansible-db:
+    build: ansible-node/ 
+    container_name: ansible-db
+    networks:
+      - ansible-network
+    stdin_open: true
+    tty: true    
+networks:
+  ansible-network:
+    driver: bridge
