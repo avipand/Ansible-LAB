@@ -6,8 +6,8 @@ password : ansible
 -----------------
 Some command must to know to manage images :
 
-1. Running of docker composefile .
-          docker-compose up
+1. Running of docker composefile
+          example - docker-compose up
 2. Stopping of docker composefile.
           docker-compose stop
 3. Deleting conatiner 
