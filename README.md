@@ -41,41 +41,21 @@ Before cloning and running the project, ensure Docker is installed on your local
 ```bash
 docker --version
 # Output: Docker version 20.10.7, build f0df350
-_____________________
 
 ### Running the Ansible Playground
 
 Once Docker is installed, follow these steps to run the Ansible playground:
 
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/avipand/ansible.git
+   bash>> git clone https://github.com/avipand/ansible.git
    cd ansible
-   ```
 
 2. **Run the Playground:**
    Execute the following command to start the Ansible playground using Docker:
-   ```bash
-   docker-compose up
-   ```
+   bash >>> docker-compose up
 
 3. **Access the Playground:**
    - The playground should be up and running. 
    - You can now start using Ansible in your local environment without any additional VM or configuration.
 
-#### Example:
-
-```bash
-# Clone the repository
-git clone https://github.com/avipand/ansible.git
-cd ansible
-
-# Run the Ansible playground
-docker-compose up
-```
-
-### Notes:
-- Ensure Docker is running before executing the `docker-compose up` command.
-- Refer to the repository's documentation for any additional configuration or setup details.
-```
 Note - Ensure Docker is running before proceeding to clone and run the Ansible project.
